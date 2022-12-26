@@ -1,12 +1,12 @@
 {
-  "name": "Leiam Nash",
+  "name": "megumi",
   "version": "0.0.3",
-  "description": "Bot Kaguya",
-  "main": "kaguya.js",
+  "description": "mafusa team",
+  "main": "mafusa.js",
   "scripts": {
-    "start": "node kaguya.js"
+    "start": "node mafusa.js"
   },
-  "author": "Leiam Nash",
+  "author": "megumi",
   "license": "ISC",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
