@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Alization • a one second monitoring tool for your system fast and easy</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/LeiamNashRebirth/LeiamNashRebirth/or.css" />
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js"
+
+      defer
+
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+
+    <script>
+
+      window.onload = () => {
+
+     setInterval(() => {
+
+            window.location = window.location.href;
+
+         }, 1000)
+
+      }
+
+   </script>
+
+  </head>
+
+  <body>
+
+    <div class="dark:bg-dark">
+
+      <header class="py-8 md:py-12 mb-8">
+
+          
+
+        <div class="container">
+
+          <div
+
+            class="flex items-center p-5 mt-8 md:mt-24 status font-semibold text-dark-green"
+
+          >
+
+            <svg
+
+              class="mr-4"
+
+              width="29"
+
+              height="29"
+
+              fill="currentColor"
+
+              xmlns="http://www.w3.org/2000/svg"
+
+            >
+
+              <path
+
+                d="M12.3733 0c6.8363 0 12.3734 2.87113 12.3734 6.41593 0 3.5448-5.5371 6.41597-12.3734 6.41597C5.53707 12.8319 0 9.96073 0 6.41593 0 2.87113 5.53707 0 12.3733 0zM0 9.62389c0 3.54481 5.53707 6.41591 12.3733 6.41591 6.8363 0 12.3734-2.8711 12.3734-6.41591v4.94031L23.2 14.4358c-4.0059 0-7.424 2.6306-8.7232 6.3197l-2.1035.0963C5.53707 20.8518 0 17.9806 0 14.4358V9.62389zm0 8.01991c0 3.5448 5.53707 6.4159 12.3733 6.4159H13.92c0 1.6842.4176 3.2722 1.16 4.6516l-2.7067.1604C5.53707 28.8717 0 26.0006 0 22.4558v-4.812zM21.6533 29L17.4 24.1881l1.7941-1.8607 2.4592 2.5343 5.5526-5.7422L29 21.3811 21.6533 29z"
+
+              />
+
+            </svg>
+
+            your system is now online
+
+          </div>
+
+        </div>
+
+      </header>
+
+      <main>
+
+        <h2
+
+          class="container text-xs tracking-wide text-green-500 dark:text-green-300 uppercase font-bold mb-8"
+
+        >
+
+          uptime Monitoring
+
+        </h2>
+
+        <div class="monitors space-y-6">
+
+          <div class="monitor py-8 bg-green-400 bg-opacity-10" x-data="bars()">
+
+            <div class="container flex items-center justify-between mb-3">
+
+              <h1 class="text-green-600 dark:text-green-500 font-semibold" style="position: relative; bottom: 15px;">server connected</h1>
+
+              
+
+            </div>
+
+            <div class="container bars">
+
+              <div class="flex space-x-px">
+
+                <template
+
+   x-on:resize.window="count = calculate()"
+
+                  x-for="i in count"
+
+                >
+
+                  <div
+
+                    class="bars bg-green-400 flex-1 h-10 rounded hover:opacity-80 cursor-pointer"
+
+                  ></div>
+
+                </template>
+
+              </div>
+
+            </div>
+
+            <div class="container mt-2">
+
+              <div class="flex items-center">
+
+                <div class="h-px bg-green-500 w-full"></div>
+
+                <span id="hw" class="px-2 flex-shrink-0 text-green-500 text-xs font-semibold" x-text="leiam() + 'ms'"></span>
+
+                <div class="h-px bg-green-500 w-full"></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+   
+
+              </div>
+
+            </div>
+
+          </div>
+
+          
+
+            </div>
+
+          </div>
+
+          <a href="https://cdn.jsdelivr.net/gh/LeiamNashRebirth/LeiamNashRebirth/pagod.html" style="position: relative; height: auto; bottom: -64px; left: 87px; background: #ffb37b; border: 1px solid rgba(0, 0, 0, 0.1); padding: 18px; font-size: 15px; border-radius: 3px; cursor: pointer; margin-top: 20px; color: black; -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">add new monitor</a>
+
+        <h2 class="container text-xs tracking-wide text-green-500 dark:text-green-300 uppercase font-bold mb-8" style="position: relative; height: auto; bottom: -200px; text-align: center;">
+
+          leiamnash
+
+        </h2>
+
+          </div>
+
+        </div>
+
+      </main>
+
+      
+
+    </div>
+
+    <script>
+
+   function leiam() {
+
+  return Math.floor(Math.random() * 150);
+
+}
+
+        
+
+      function bars() {      
+
+        const calculate = () =>
+
+Math.min(Math.floor(window.innerWidth / 10.7), 90);
+
+        return {
+
+         count: calculate(),
+
+          calculate
+
+        }
+
+    }
+
+    </script>
+
+  </body>
+
+</html>
+
