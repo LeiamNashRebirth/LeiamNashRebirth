@@ -44,3 +44,19 @@ Konnichiwa Minna san it's me <br>
 <a href="https://github.com/LeiamNashRebirth/Api">
  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=LeiamNashRebirth&repo=Api&theme=github_dark" />
 </a>
+
+
+Mortal Combat 11
+https://drive.google.com/file/d/10Z0iUXJYWiNzbVB3TyVle7lmupIn2M0u/view
+
+Ni no Kuni Wrath of the White Witch
+https://drive.google.com/file/d/1WdX7QOe6HVxKTVmX32PNlwIkDcvyGDeq/view
+
+Astral Chain
+https://drive.google.com/file/d/1ERsmnC9XaAoOz-9CbA5Xp1DMTXHMJUDS/view
+
+Minecraft Legends
+https://drive.google.com/file/d/1rhA2Fm_XCKXY9lBWdKZAX9KPwrpZ79PA/view
+
+Xenoblade Chronicles 3
+https://drive.google.com/file/d/1Q_qTuduCW0Fg83G-fEstfL9qdW1gyzHb/view
